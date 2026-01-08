@@ -29,6 +29,12 @@ It installs skills into `~/.claude/skills/` and provides a simple workflow aroun
 - **Repository management**: add `owner/repo` or GitHub URLs (`tree/blob/raw`), with optional `ref` and subpath
 - **UX**: automatic language detection (ZH/EN) + manual toggle, light/dark theme
 
+## Screenshots
+
+| Skill Store | Installed | Create Skill |
+| --- | --- | --- |
+| <img src="assets/screenshots/skill-store.png" alt="Skill Store" width="300" /> | <img src="assets/screenshots/installed.png" alt="Installed Skills" width="300" /> | <img src="assets/screenshots/create-skill.png" alt="Create Skill" width="300" /> |
+
 ## Download & Install
 
 ### System requirements

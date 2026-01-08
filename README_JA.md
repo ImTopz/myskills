@@ -29,6 +29,12 @@ Skills は `~/.claude/skills/` にインストールされ、GitHub ベースの
 - **リポジトリ管理**：`owner/repo`、GitHub `tree/blob/raw` URL（任意で `ref` とサブパス）に対応
 - **UX**：言語の自動判定（中/英）＋手動切替、ライト/ダークテーマ
 
+## スクリーンショット
+
+| ストア | インストール済み | 作成 |
+| --- | --- | --- |
+| <img src="assets/screenshots/skill-store.png" alt="Skill Store" width="300" /> | <img src="assets/screenshots/installed.png" alt="Installed Skills" width="300" /> | <img src="assets/screenshots/create-skill.png" alt="Create Skill" width="300" /> |
+
 ## ダウンロード & インストール
 
 ### システム要件

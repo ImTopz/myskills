@@ -29,6 +29,12 @@ MySkills 是一个轻量的桌面应用，用于发现、安装、管理与创�
 - **仓库管理**：支持 `owner/repo`，以及 GitHub 的 `tree/blob/raw` 链接（可选 `ref` 与子目录）
 - **体验**：自动语言检测（中/英）+ 手动切换、明暗主题
 
+## 软件截图
+
+| 技能商店 | 已安装 | 创建技能 |
+| --- | --- | --- |
+| <img src="assets/screenshots/skill-store.png" alt="技能商店" width="300" /> | <img src="assets/screenshots/installed.png" alt="已安装" width="300" /> | <img src="assets/screenshots/create-skill.png" alt="创建技能" width="300" /> |
+
 ## 下载与安装
 
 ### 系统要求
