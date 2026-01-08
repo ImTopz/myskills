@@ -5,8 +5,8 @@
 **Claude Code Skills 管理器**
 
 [![CI](https://github.com/ImTopz/myskills/actions/workflows/ci.yml/badge.svg)](https://github.com/ImTopz/myskills/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/ImTopz/myskills?display_name=tag&sort=semver)](https://github.com/ImTopz/myskills/releases)
-[![Stars](https://img.shields.io/github/stars/ImTopz/myskills?style=flat)](https://github.com/ImTopz/myskills/stargazers)
+[![Release](https://img.shields.io/github/v/release/ImTopz/myskills?display_name=tag&sort=semver&cacheSeconds=3600)](https://github.com/ImTopz/myskills/releases)
+[![Stars](https://img.shields.io/github/stars/ImTopz/myskills?style=flat&cacheSeconds=3600)](https://github.com/ImTopz/myskills/stargazers)
 [![Platform](https://img.shields.io/badge/platform-macOS%20Apple%20Silicon-lightgrey.svg)](#系统要求)
 [![Built%20with%20Tauri](https://img.shields.io/badge/built%20with-Tauri%202-orange.svg)](https://tauri.app/)
 
@@ -101,4 +101,3 @@ cargo clippy --manifest-path src-tauri/Cargo.toml -- -D warnings
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ImTopz/myskills&type=Date)](https://www.star-history.com/#ImTopz/myskills&Date)
-
