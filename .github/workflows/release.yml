@@ -1,0 +1,48 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  macos-aarch64:
+    name: macOS (Apple Silicon)
+    permissions:
+      contents: write
+    runs-on: macos-14
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Build Tauri app
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: 'MySkills v__VERSION__'
+          releaseBody: |
+            ## Installation
+            - **macOS (Apple Silicon)**: Download the `.dmg` file
+
+            > Note: This build is not notarized. On first launch, macOS may show an "unidentified developer" warning.
+            > Go to **System Settings → Privacy & Security** and click **Open Anyway**.
+          releaseDraft: false
+          prerelease: false
+          args: '--target aarch64-apple-darwin --bundles dmg'

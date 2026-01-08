@@ -1,0 +1,130 @@
+{
+  "common": {
+    "appName": "MySkills",
+    "search": "Search",
+    "install": "Install",
+    "uninstall": "Uninstall",
+    "installed": "Installed",
+    "uninstalling": "Uninstalling...",
+    "uninstalled": "Uninstalled",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back",
+    "next": "Next",
+    "collapse": "Collapse",
+    "refresh": "Refresh"
+  },
+  "nav": {
+    "store": "Skill Store",
+    "installed": "Installed",
+    "create": "Create Skill",
+    "settings": "Settings"
+  },
+  "store": {
+    "title": "Skill Store",
+    "subtitle": "Discover and install Claude Code skills",
+    "searchPlaceholder": "Search skills...",
+    "noResults": "No matching skills found",
+    "categories": {
+      "all": "All",
+      "development": "Development",
+      "data": "Data & Analysis",
+      "writing": "Writing",
+      "business": "Business",
+      "creative": "Creative",
+      "productivity": "Productivity",
+      "other": "Other"
+    }
+  },
+  "installed": {
+    "title": "Installed Skills",
+    "subtitle": "Manage your Claude Code skills",
+    "empty": "No skills installed yet",
+    "emptyHint": "Browse and install skills from the store",
+    "openFolder": "Open Folder",
+    "uninstallConfirm": "Are you sure you want to uninstall {{name}}?"
+  },
+  "create": {
+    "title": "Create Skill",
+    "subtitle": "Create your own Claude Code skill",
+    "success": {
+      "title": "Skill created!",
+      "message": "Your custom Skill has been saved to:",
+      "createAnother": "Create another Skill"
+    },
+    "steps": {
+      "basic": "Basic Info",
+      "instructions": "Instructions",
+      "examples": "Examples",
+      "review": "Review"
+    },
+    "fields": {
+      "name": "Skill Name",
+      "nameHint": "Will be normalized to kebab-case",
+      "description": "Description",
+      "resources": "Resource files",
+      "resourcesDrop": "Drop files here, or click to choose",
+      "resourcesHint": "Files will be installed under resources/ in the Skill directory",
+      "instructions": "Instructions",
+      "instructionsHint": "Tell Claude what this Skill should do",
+      "examplesHint": "Optional: add examples to help Claude understand"
+    },
+    "review": {
+      "preview": "Preview of the generated SKILL.md:",
+      "resources": "The following resource files will also be installed:"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "about": "About",
+    "repositories": {
+      "title": "Repository Management",
+      "description": "Manage skill source repositories",
+      "add": "Add Repository",
+      "builtin": "Built-in Repositories",
+      "custom": "Custom Repositories",
+      "invalidFormat": "Please use owner/repo format",
+      "confirmRemove": "Remove this repository?",
+      "builtinBadge": "Built-in",
+      "lastSynced": "Last synced"
+    },
+    "cache": {
+      "title": "Cache Settings",
+      "skillsDir": "Skills Directory",
+      "clear": "Clear Cache",
+      "clearHint": "Clear cached skills data",
+      "notImplemented": "Cache features are not implemented yet",
+      "lastSync": "Last Synced"
+    },
+    "appearance": {
+      "title": "Appearance",
+      "theme": "Theme",
+      "themeHint": "Toggle light/dark theme",
+      "toggle": "Toggle",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System",
+      "language": "Language"
+    }
+  },
+  "detail": {
+    "noReadme": "No detailed description available",
+    "viewOnGitHub": "View on GitHub",
+    "path": "Path",
+    "author": "Author",
+    "tags": "Tags"
+  },
+  "errors": {
+    "network": "Network connection failed. Please check your internet.",
+    "rateLimit": "Too many requests. Please try again later.",
+    "installFailed": "Installation failed. Please check permissions.",
+    "uninstallFailed": "Uninstallation failed"
+  }
+}

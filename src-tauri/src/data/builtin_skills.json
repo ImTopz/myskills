@@ -1,0 +1,190 @@
+{
+  "repository": "ComposioHQ/awesome-claude-skills",
+  "version": "2025-01-07",
+  "skills": [
+    {
+      "path": "artifacts-builder",
+      "name": "Artifacts Builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).",
+      "category": "development",
+      "author": "ComposioHQ",
+      "tags": ["react", "tailwind", "shadcn", "artifacts", "html"]
+    },
+    {
+      "path": "brand-guidelines",
+      "name": "Brand Guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel.",
+      "category": "creative",
+      "author": "ComposioHQ",
+      "tags": ["brand", "design", "styling", "anthropic"]
+    },
+    {
+      "path": "canvas-design",
+      "name": "Canvas Design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. Create original visual designs for posters, art pieces, and static content.",
+      "category": "creative",
+      "author": "ComposioHQ",
+      "tags": ["design", "art", "png", "pdf", "visual"]
+    },
+    {
+      "path": "changelog-generator",
+      "name": "Changelog Generator",
+      "description": "Automatically creates user-facing changelogs from git commits by analyzing commit history and transforming technical commits into clear release notes.",
+      "category": "development",
+      "author": "ComposioHQ",
+      "tags": ["git", "changelog", "release-notes", "automation"]
+    },
+    {
+      "path": "competitive-ads-extractor",
+      "name": "Competitive Ads Extractor",
+      "description": "Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand what messaging and creative approaches are working.",
+      "category": "business",
+      "author": "ComposioHQ",
+      "tags": ["ads", "marketing", "competitive-analysis", "facebook", "linkedin"]
+    },
+    {
+      "path": "content-research-writer",
+      "name": "Content Research Writer",
+      "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing real-time feedback on each section.",
+      "category": "writing",
+      "author": "ComposioHQ",
+      "tags": ["writing", "research", "content", "citations"]
+    },
+    {
+      "path": "developer-growth-analysis",
+      "name": "Developer Growth Analysis",
+      "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvement with personalized growth reports.",
+      "category": "development",
+      "author": "ComposioHQ",
+      "tags": ["developer", "growth", "analysis", "learning"]
+    },
+    {
+      "path": "domain-name-brainstormer",
+      "name": "Domain Name Brainstormer",
+      "description": "Helps brainstorm creative and available domain names for your projects, checking availability and suggesting alternatives.",
+      "category": "business",
+      "author": "ComposioHQ",
+      "tags": ["domain", "brainstorm", "naming", "startup"]
+    },
+    {
+      "path": "file-organizer",
+      "name": "File Organizer",
+      "description": "Intelligently organizes your files and folders by understanding context, finding duplicates, and automating cleanup tasks.",
+      "category": "productivity",
+      "author": "ComposioHQ",
+      "tags": ["files", "organization", "cleanup", "automation"]
+    },
+    {
+      "path": "image-enhancer",
+      "name": "Image Enhancer",
+      "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity for presentations and documentation.",
+      "category": "creative",
+      "author": "ComposioHQ",
+      "tags": ["image", "enhancement", "screenshot", "quality"]
+    },
+    {
+      "path": "internal-comms",
+      "name": "Internal Communications",
+      "description": "A set of resources to help write all kinds of internal communications like status reports, leadership updates, newsletters, and FAQs.",
+      "category": "writing",
+      "author": "ComposioHQ",
+      "tags": ["communications", "internal", "reports", "newsletters"]
+    },
+    {
+      "path": "invoice-organizer",
+      "name": "Invoice Organizer",
+      "description": "Automatically organizes invoices and receipts for tax preparation by extracting key information, renaming consistently, and sorting into folders.",
+      "category": "productivity",
+      "author": "ComposioHQ",
+      "tags": ["invoices", "receipts", "tax", "organization"]
+    },
+    {
+      "path": "lead-research-assistant",
+      "name": "Lead Research Assistant",
+      "description": "Identifies high-quality leads for your product or service by analyzing your business, searching for target companies, and providing contact strategies.",
+      "category": "business",
+      "author": "ComposioHQ",
+      "tags": ["leads", "sales", "research", "business-development"]
+    },
+    {
+      "path": "mcp-builder",
+      "name": "MCP Builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools.",
+      "category": "development",
+      "author": "ComposioHQ",
+      "tags": ["mcp", "server", "api", "integration"]
+    },
+    {
+      "path": "meeting-insights-analyzer",
+      "name": "Meeting Insights Analyzer",
+      "description": "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback.",
+      "category": "productivity",
+      "author": "ComposioHQ",
+      "tags": ["meetings", "transcripts", "analysis", "insights"]
+    },
+    {
+      "path": "raffle-winner-picker",
+      "name": "Raffle Winner Picker",
+      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests with fair and transparent selection.",
+      "category": "productivity",
+      "author": "ComposioHQ",
+      "tags": ["raffle", "random", "giveaway", "contest"]
+    },
+    {
+      "path": "skill-creator",
+      "name": "Skill Creator",
+      "description": "Guide for creating effective Claude skills that extend Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "category": "development",
+      "author": "ComposioHQ",
+      "tags": ["skill", "creation", "claude", "development"]
+    },
+    {
+      "path": "skill-share",
+      "name": "Skill Share",
+      "description": "Creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.",
+      "category": "productivity",
+      "author": "ComposioHQ",
+      "tags": ["skill", "sharing", "slack", "collaboration"]
+    },
+    {
+      "path": "slack-gif-creator",
+      "name": "Slack GIF Creator",
+      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives.",
+      "category": "creative",
+      "author": "ComposioHQ",
+      "tags": ["gif", "slack", "animation", "emoji"]
+    },
+    {
+      "path": "template-skill",
+      "name": "Template Skill",
+      "description": "A template for creating new Claude skills with the proper structure and formatting guidelines.",
+      "category": "development",
+      "author": "ComposioHQ",
+      "tags": ["template", "skill", "starter"]
+    },
+    {
+      "path": "theme-factory",
+      "name": "Theme Factory",
+      "description": "Toolkit for styling artifacts with themes. Includes 10 pre-set themes with colors and fonts that can be applied to slides, docs, and landing pages.",
+      "category": "creative",
+      "author": "ComposioHQ",
+      "tags": ["theme", "styling", "colors", "fonts"]
+    },
+    {
+      "path": "video-downloader",
+      "name": "Video Downloader",
+      "description": "Download YouTube videos with customizable quality and format options. Supports various quality settings and audio-only downloads as MP3.",
+      "category": "productivity",
+      "author": "ComposioHQ",
+      "tags": ["video", "youtube", "download", "mp3"]
+    },
+    {
+      "path": "webapp-testing",
+      "name": "Web App Testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports frontend verification and browser automation.",
+      "category": "development",
+      "author": "ComposioHQ",
+      "tags": ["testing", "playwright", "web", "automation"]
+    }
+  ]
+}
