@@ -2,83 +2,85 @@
 
 # MySkills
 
-**Claude Code Skills 桌面管理器**
+**Claude Code Skills Manager**
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](#)
 [![CI](https://github.com/ImTopz/myskills/actions/workflows/ci.yml/badge.svg)](https://github.com/ImTopz/myskills/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/ImTopz/myskills?display_name=tag&sort=semver)](https://github.com/ImTopz/myskills/releases)
 [![Stars](https://img.shields.io/github/stars/ImTopz/myskills?style=flat)](https://github.com/ImTopz/myskills/stargazers)
+[![Platform](https://img.shields.io/badge/platform-macOS%20Apple%20Silicon-lightgrey.svg)](#system-requirements)
 [![Built%20with%20Tauri](https://img.shields.io/badge/built%20with-Tauri%202-orange.svg)](https://tauri.app/)
 
-[下载 Releases](https://github.com/ImTopz/myskills/releases) · [提交 Issue](https://github.com/ImTopz/myskills/issues) · [查看 CI](https://github.com/ImTopz/myskills/actions)
+English | [中文](README_ZH.md) | [日本語](README_JA.md)
+
+[Releases](https://github.com/ImTopz/myskills/releases) · [Issues](https://github.com/ImTopz/myskills/issues) · [Actions](https://github.com/ImTopz/myskills/actions)
 
 </div>
 
-MySkills 用于发现、安装、管理与创建 **Claude Code Skills**。应用会把技能安装到 `~/.claude/skills/`，并提供仓库扫描、安装/卸载、内容查看与自定义 Skill 创建等能力。
+MySkills is a lightweight desktop app for discovering, installing, and managing **Claude Code Skills**.
 
-## 功能
+It installs skills into `~/.claude/skills/` and provides a simple workflow around GitHub-based skill repositories (scan, install/uninstall, view content, and create your own skills).
 
-- **Skill Store**：从配置的 GitHub 仓库扫描 Skills（解析 `SKILL.md` frontmatter / tags）
-- **完整安装**：递归下载并安装 Skill 目录（包含 `resources/`、`scripts/` 等文件）
-- **Installed 管理**：查看 `SKILL.md`、打开目录、卸载（含操作反馈）
-- **创建向导**：生成自定义 Skill，并支持附带资源文件（默认安装到 `resources/`）
-- **仓库管理**：支持 `owner/repo`、GitHub `tree/blob` 链接、`raw.githubusercontent.com` 链接（可选指定 `ref` 与子目录）
-- **体验**：自动语言检测（中文/英文）、明暗主题
+## Features
 
-## 下载与安装
+- **Skill Store**: scan GitHub repositories and read metadata from `SKILL.md`
+- **Full install**: installs the whole skill directory (including `resources/`, `scripts/`, etc.)
+- **Installed management**: preview `SKILL.md`, reveal in Finder, uninstall
+- **Create skill**: wizard to generate a custom skill (with optional resource files installed under `resources/`)
+- **Repository management**: add `owner/repo` or GitHub URLs (`tree/blob/raw`), with optional `ref` and subpath
+- **UX**: automatic language detection (ZH/EN) + manual toggle, light/dark theme
 
-### 系统要求
+## Download & Install
 
-- **macOS（Apple Silicon）**：macOS 10.15+（推荐 11+）
-- **Claude Code**：已安装并使用默认 skills 目录（`~/.claude/skills/`）
+### System requirements
 
-> 当前 Releases 提供 macOS（Apple Silicon）DMG。Windows/Linux 可自行从源码构建。
+- **macOS**: 10.15+ (Apple Silicon)
+- **Claude Code**: uses the default skills directory `~/.claude/skills/`
 
-### macOS（Apple Silicon）
+### macOS (Apple Silicon)
 
-1. 在 [Releases](https://github.com/ImTopz/myskills/releases) 下载 `.dmg`
-2. 打开 DMG，把 `MySkills.app` 拖到 `Applications`
-3. 首次启动若被 Gatekeeper 拦截：进入 **系统设置 → 隐私与安全性**，点击 **仍要打开**
+1. Download the latest `.dmg` from [Releases](https://github.com/ImTopz/myskills/releases)
+2. Open the DMG and drag `MySkills.app` into `Applications`
+3. First launch may be blocked by Gatekeeper (not notarized yet):
+   - **System Settings → Privacy & Security → Open Anyway**
 
-## 使用
+## Quick Start
 
-- **Store**：刷新仓库索引 → 安装/卸载 → 查看详情
-- **Installed**：管理本地已安装技能（内容、打开目录、卸载）
-- **Create**：创建自定义 Skill（支持资源文件）
-- **Settings**：管理仓库、查看目录、切换主题/语言
+- **Store**: refresh → install/uninstall → open details (and GitHub link)
+- **Installed**: open a skill card → preview content → uninstall or reveal in Finder
+- **Create**: fill in name/description/instructions → optionally attach resource files → create
+- **Settings**: manage repositories, open skills directory, theme/language
 
-## 数据目录
+## Data locations
 
-- Skills 安装目录：`~/.claude/skills/`
-- MySkills 配置：`~/.myskills/config.json`
-- MySkills 缓存：`~/.myskills/cache/`（自定义仓库扫描缓存）
+- Skills directory: `~/.claude/skills/`
+- App config: `~/.myskills/config.json`
+- Cache: `~/.myskills/cache/` (scan results for custom repositories)
 
-## 从源码构建
+## Build from source
 
-### 前置条件
+### Prerequisites
 
 - Node.js 18+
-- Rust stable（建议使用 `rustup`）
-- Tauri 系统依赖：https://tauri.app/start/prerequisites/
+- Rust stable (via `rustup`)
+- Tauri system dependencies: https://tauri.app/start/prerequisites/
 
-### 开发（Tauri Dev）
+### Dev
 
 ```bash
 npm ci
 npm run tauri dev
 ```
 
-### 打包（DMG，Apple Silicon）
+### Build (DMG, Apple Silicon)
 
 ```bash
 npm ci
 npm run tauri build -- --target aarch64-apple-darwin --bundles dmg
 ```
 
-产物路径（默认）：
-- `src-tauri/target/release/bundle/dmg/`
+Artifacts are generated under `src-tauri/target/release/bundle/`.
 
-### 本地对齐 CI（建议）
+### CI parity
 
 ```bash
 npm run build
@@ -86,18 +88,17 @@ cargo fmt --manifest-path src-tauri/Cargo.toml -- --check
 cargo clippy --manifest-path src-tauri/Cargo.toml -- -D warnings
 ```
 
-## 常见问题
+## Troubleshooting
 
-### GitHub API 频率限制（Rate Limit）
+### GitHub API rate limit
 
-- 频繁刷新/扫描可能触发限制；可稍后重试
-- 如需代理，可配置 `HTTPS_PROXY` / `HTTP_PROXY` / `ALL_PROXY`
+Frequent scans may hit GitHub API rate limits. You can wait and retry. Proxy is supported via `HTTPS_PROXY` / `HTTP_PROXY` / `ALL_PROXY`.
 
 ### “already installed”
 
-- 说明对应目录已存在于 `~/.claude/skills/`
-- 可在 Installed 中先卸载，或手动移除目录后重试
+The target directory already exists under `~/.claude/skills/`. Uninstall it in MySkills or remove the directory manually.
 
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ImTopz/myskills&type=Date)](https://www.star-history.com/#ImTopz/myskills&Date)
+
